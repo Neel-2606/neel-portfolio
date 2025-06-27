@@ -1,0 +1,58 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  transition: all 0.3s ease;
+  background: transparent;
+  z-index: 999;
+}
+
+.sticky {
+  background: #111;
+  padding: 15px 0;
+}
+
+.maxWidth {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.logo a span {
+  color: crimson;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 25px;
+}
+
+.menu li a {
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: crimson;
+}
+
+.menuBtnIcon {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
