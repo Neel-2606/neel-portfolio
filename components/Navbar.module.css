@@ -1,58 +1,89 @@
+
 .navbar {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
-  padding: 30px 0;
-  transition: all 0.3s ease;
-  background: transparent;
+  background-color: #0f0f0f;
   z-index: 999;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.sticky {
-  background: #111;
-  padding: 15px 0;
-}
-
-.maxWidth {
-  max-width: 1300px;
-  margin: auto;
-  padding: 0 80px;
+.container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.logo a {
-  color: #fff;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.logo a span {
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
   color: crimson;
 }
 
-.menu {
+.navLinks {
   display: flex;
+  gap: 2rem;
   list-style: none;
 }
 
-.menu li {
-  margin-left: 25px;
+.navLinks li a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: 0.3s ease;
+  position: relative;
 }
 
-.menu li a {
-  color: #fff;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.menu li a:hover {
+.navLinks li a:hover,
+.navLinks li a.active {
   color: crimson;
 }
 
-.menuBtnIcon {
+.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: crimson;
+  bottom: -5px;
+  left: 0;
+}
+
+.menuIcon {
   display: none;
-  color: white;
-  font-size: 24px;
+  flex-direction: column;
   cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .menuIcon {
+    display: flex;
+  }
 }

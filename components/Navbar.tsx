@@ -1,44 +1,53 @@
-// components/Navbar.tsx
-import React, { useState, useEffect } from "react";
-import styles from "./Navbar.module.css"; // we’ll create this next
-import { FaBars } from "react-icons/fa";
+'use client';
+
+import { useState, useEffect } from 'react';
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
-  const [sticky, setSticky] = useState(false);
-  const [menuActive, setMenuActive] = useState(false);
+  const [activeLink, setActiveLink] = useState('#home');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setSticky(window.scrollY > 20);
+      const sections = ['#home', '#about', '#projects', '#contact'];
+      for (let id of sections) {
+        const el = document.querySelector(id);
+        if (el) {
+          const top = el.getBoundingClientRect().top;
+          if (top <= 100 && top >= -300) {
+            setActiveLink(id);
+            break;
+          }
+        }
+      }
     };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
-    <nav className={`${styles.navbar} ${sticky ? styles.sticky : ""}`}>
-      <div className={styles.maxWidth}>
-        <div className={styles.logo}>
-          <a href="#">
-            Portfo<span>lio.</span>
-          </a>
+    <nav className={styles.navbar}>
+      <div className={styles.container}>
+        <div className={styles.logo}>Neel.</div>
+
+        <div className={styles.menuIcon} onClick={toggleMenu}>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
         </div>
-        <ul className={`${styles.menu} ${menuActive ? styles.active : ""}`}>
-          {["Home", "About", "Services", "Skills", "Teams", "Contact"].map((item) => (
-            <li key={item}>
-              <a href={`#${item.toLowerCase()}`} className={styles.menuBtn}>
-                {item}
-              </a>
-            </li>
-          ))}
+
+        <ul className={`${styles.navLinks} ${isMenuOpen ? styles.showMenu : ''}`}>
+          <li><a href="#home" className={activeLink === '#home' ? styles.active : ''}>Home</a></li>
+          <li><a href="#about" className={activeLink === '#about' ? styles.active : ''}>About</a></li>
+          <li><a href="#projects" className={activeLink === '#projects' ? styles.active : ''}>Projects</a></li>
+          <li><a href="#contact" className={activeLink === '#contact' ? styles.active : ''}>Contact</a></li>
         </ul>
-        <div className={styles.menuBtnIcon} onClick={() => setMenuActive(!menuActive)}>
-          <FaBars />
-        </div>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
+
