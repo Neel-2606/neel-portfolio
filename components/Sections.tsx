@@ -1,4 +1,5 @@
 import styles from "@/styles/Sections.module.css";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Sections() {
   return (
@@ -8,28 +9,53 @@ export default function Sections() {
         <h2 className={styles.title}>About Me</h2>
         <div className={styles.aboutContent}>
           <p>
-            <p>I&apos;m a passionate developer</p>
-
+            I'm a Computer Science student with a passion for building things
+            that matter. I enjoy learning new technologies, working on creative
+            projects, and growing my skills every day. My current focus is on
+            full-stack web development, AI tools, and impactful innovation.
           </p>
-          <a href="#" className={styles.btn}>Download CV</a>
+          <a href="#" className={styles.btn}>📄 Download Resume</a>
         </div>
       </section>
 
-      {/* SERVICES */}
-      <section className={`${styles.section} ${styles.dark}`} id="services">
-        <h2 className={styles.title}>What I Do</h2>
+      {/* PROJECTS */}
+      <section className={`${styles.section} ${styles.dark}`} id="projects">
+        <h2 className={styles.title}>Projects</h2>
         <div className={styles.cards}>
           <div className={styles.card}>
-            <h3>Web Development</h3>
-            <p>Responsive websites using modern frameworks and best practices.</p>
+            <h3>🧠 MindForge</h3>
+            <p>
+              A powerful AI-powered builder that can generate websites, mobile
+              apps, games, tools, and more using natural language. Combines
+              multiple AI + dev tools into a single universal platform.
+            </p>
+            <div className={styles.cardButtons}>
+              <a href="#" className={styles.btn}>🔗 Demo</a>
+              <a href="#" className={styles.btn}>💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ACHIEVEMENTS */}
+      <section className={styles.section} id="achievements">
+        <h2 className={styles.title}>Achievements & Hackathons</h2>
+        <div className={styles.cards}>
+          <div className={styles.card}>
+            <h3>Google Cloud Career Launchpad</h3>
+            <p>Completed Generative AI Track under the Cloud Career Launchpad Program.</p>
           </div>
           <div className={styles.card}>
-            <h3>UI/UX Design</h3>
-            <p>Clean and intuitive interfaces for websites and applications.</p>
+            <h3>Diamond League Participant</h3>
+            <p>Active participant in elite tech challenges and hackathons.</p>
           </div>
           <div className={styles.card}>
-            <h3>Freelancing</h3>
-            <p>Collaborative project delivery with a focus on quality and efficiency.</p>
+            <h3>Hack2Skill Hackathon</h3>
+            <p>Developed AI-based solutions during a 48-hour hackathon event.</p>
+          </div>
+          <div className={styles.card}>
+            <h3>AI for Impact Hackathon</h3>
+            <p>Participated in Google Cloud AI for Impact to solve real-world problems using AI.</p>
           </div>
         </div>
       </section>
@@ -38,26 +64,11 @@ export default function Sections() {
       <section className={styles.section} id="skills">
         <h2 className={styles.title}>My Skills</h2>
         <div className={styles.skills}>
-          <div className={styles.skillBar}>
-            <span>HTML</span>
-            <div><div className={styles.bar} style={{ width: "90%" }} /></div>
-          </div>
-          <div className={styles.skillBar}>
-            <span>CSS</span>
-            <div><div className={styles.bar} style={{ width: "85%" }} /></div>
-          </div>
-          <div className={styles.skillBar}>
-            <span>JavaScript</span>
-            <div><div className={styles.bar} style={{ width: "80%" }} /></div>
-          </div>
-          <div className={styles.skillBar}>
-            <span>React</span>
-            <div><div className={styles.bar} style={{ width: "75%" }} /></div>
-          </div>
-          <div className={styles.skillBar}>
-            <span>Next.js</span>
-            <div><div className={styles.bar} style={{ width: "70%" }} /></div>
-          </div>
+          <div className={styles.skillBar}><span>C</span><div><div className={styles.bar} style={{ width: "85%" }} /></div></div>
+          <div className={styles.skillBar}><span>C++</span><div><div className={styles.bar} style={{ width: "80%" }} /></div></div>
+          <div className={styles.skillBar}><span>Java</span><div><div className={styles.bar} style={{ width: "75%" }} /></div></div>
+          <div className={styles.skillBar}><span>AI Tools</span><div><div className={styles.bar} style={{ width: "70%" }} /></div></div>
+          <div className={styles.skillBar}><span>Web Development (HTML, CSS, JS)</span><div><div className={styles.bar} style={{ width: "78%" }} /></div></div>
         </div>
       </section>
 
@@ -70,6 +81,10 @@ export default function Sections() {
           <textarea placeholder="Your Message" rows={5} required />
           <button type="submit" className={styles.btn}>Send Message</button>
         </form>
+        <div className={styles.socialIcons}>
+          <FaGithub className={styles.icon} />
+          <FaLinkedin className={styles.icon} />
+        </div>
       </section>
 
       {/* FOOTER */}
@@ -79,3 +94,4 @@ export default function Sections() {
     </>
   );
 }
+
