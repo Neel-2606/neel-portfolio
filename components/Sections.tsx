@@ -8,7 +8,8 @@ export default function Sections() {
         <h2 className={styles.title}>About Me</h2>
         <div className={styles.aboutContent}>
           <p>
-            I'm a passionate developer with experience building websites, tools, and applications. I enjoy creating sleek, modern UIs and exploring new technologies.
+            <p>I&apos;m a passionate developer</p>
+
           </p>
           <a href="#" className={styles.btn}>Download CV</a>
         </div>
