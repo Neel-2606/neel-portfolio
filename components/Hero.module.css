@@ -1,0 +1,42 @@
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.content h1 span {
+  color: crimson;
+}
+
+.content h2 {
+  font-size: 28px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 18px;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.button {
+  background: crimson;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #e60000;
+}
