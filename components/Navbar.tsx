@@ -9,7 +9,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['#home', '#about', '#services', '#skills', '#teams', '#contact'];
+      const sections = ['#home', '#about', '#projects', '#skills', '#achievements', '#contact'];
+
       for (const id of sections) {
         const el = document.querySelector(id);
         if (el) {
@@ -38,14 +39,15 @@ const Navbar = () => {
           <div className={styles.bar}></div>
         </div>
 
-        <ul className={`${styles.navLinks} ${isMenuOpen ? styles.showMenu : ''}`}>
-          <li><a href="#home" className={activeLink === '#home' ? styles.active : ''}>Home</a></li>
-          <li><a href="#about" className={activeLink === '#about' ? styles.active : ''}>About</a></li>
-          <li><a href="#services" className={activeLink === '#services' ? styles.active : ''}>Services</a></li>
-          <li><a href="#skills" className={activeLink === '#skills' ? styles.active : ''}>Skills</a></li>
-          <li><a href="#teams" className={activeLink === '#teams' ? styles.active : ''}>Teams</a></li>
-          <li><a href="#contact" className={activeLink === '#contact' ? styles.active : ''}>Contact</a></li>
-        </ul>
+      <ul className={`${styles.navLinks} ${isMenuOpen ? styles.showMenu : ''}`}>
+  <li><a href="#home" className={activeLink === '#home' ? styles.active : ''}>Home</a></li>
+  <li><a href="#about" className={activeLink === '#about' ? styles.active : ''}>About</a></li>
+  <li><a href="#projects" className={activeLink === '#projects' ? styles.active : ''}>Projects</a></li>
+  <li><a href="#skills" className={activeLink === '#skills' ? styles.active : ''}>Skills</a></li>
+  <li><a href="#achievements" className={activeLink === '#achievements' ? styles.active : ''}>Achievements</a></li>
+  <li><a href="#contact" className={activeLink === '#contact' ? styles.active : ''}>Contact</a></li>
+</ul>
+
       </div>
     </nav>
   );

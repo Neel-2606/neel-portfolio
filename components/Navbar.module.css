@@ -33,16 +33,26 @@
   text-decoration: none;
   color: #ccc;
   font-weight: 500;
-  transition: 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
   position: relative;
+  white-space: nowrap; /* Prevents text wrapping */
 }
 
-.navLinks li a:hover,
+.navLinks li a:hover {
+  color: crimson;
+  background: rgba(220, 20, 60, 0.1);
+}
+
 .navLinks li a.active {
   color: crimson;
+  font-weight: 600;
+  border-bottom: 2px solid crimson;
 }
 
-.active::after {
+/* Optional glow effect on active */
+.navLinks li a.active::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -86,5 +96,9 @@
   .menuIcon {
     display: flex;
   }
-}
 
+  .navLinks li a {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+}
