@@ -24,7 +24,9 @@ export default function Hero() {
         <h1>Hello, I&apos;m <span className={styles.name}>Neel</span></h1>
         <h2 className={styles.typing}><span ref={typedRef}></span></h2>
         <p>Building my skills and creating cool things along the way 🚀</p>
-        <a href="#contact" className={styles.button}>📬 Get In Touch</a>
+       <a href="#contact" className={styles.button}> Lets Connect 🤝</a>
+
+
       </div>
     </section>
   );
