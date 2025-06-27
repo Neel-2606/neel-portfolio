@@ -10,7 +10,7 @@ export default function Hero() {
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: ['Developer', 'Designer', 'Freelancer'],
+      strings: ['Student', 'Passionate learner', 'Devloper'],
       typeSpeed: 70,
       backSpeed: 40,
       loop: true,
@@ -23,7 +23,7 @@ export default function Hero() {
       <div className={styles.content}>
         <h1>Hello, I&apos;m <span className={styles.name}>Neel</span></h1>
         <h2 className={styles.typing}><span ref={typedRef}></span></h2>
-        <p>I build amazing websites using modern technologies.</p>
+        <p>Building my skills and creating cool things along the way 🚀</p>
         <a href="#contact" className={styles.button}>📬 Get In Touch</a>
       </div>
     </section>
