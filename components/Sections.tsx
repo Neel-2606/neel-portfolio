@@ -9,7 +9,7 @@ export default function Sections() {
         <h2 className={styles.title}>About Me</h2>
         <div className={styles.aboutContent}>
           <p>
-            I'm a Computer Science student with a passion for building things
+            I am a Computer Science student with a passion for building things
             that matter. I enjoy learning new technologies, working on creative
             projects, and growing my skills every day. My current focus is on
             full-stack web development, AI tools, and impactful innovation.
