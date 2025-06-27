@@ -8,22 +8,23 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['#home', '#about', '#projects', '#contact'];
-      for (let id of sections) {
-        const el = document.querySelector(id);
-        if (el) {
-          const top = el.getBoundingClientRect().top;
-          if (top <= 100 && top >= -300) {
-            setActiveLink(id);
-            break;
-          }
+  const handleScroll = () => {
+    const sections = ['#home', '#about', '#projects', '#contact'];
+    for (const id of sections) {
+      const el = document.querySelector(id);
+      if (el) {
+        const top = el.getBoundingClientRect().top;
+        if (top <= 100 && top >= -300) {
+          setActiveLink(id);
+          break;
         }
       }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    }
+  };
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
