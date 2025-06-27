@@ -25,7 +25,7 @@
 
 .navLinks {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
@@ -33,25 +33,20 @@
   text-decoration: none;
   color: #ccc;
   font-weight: 500;
-  padding: 6px 12px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+  font-size: 1rem;
+  transition: color 0.3s ease;
   position: relative;
-  white-space: nowrap; /* Prevents text wrapping */
 }
 
 .navLinks li a:hover {
   color: crimson;
-  background: rgba(220, 20, 60, 0.1);
 }
 
 .navLinks li a.active {
   color: crimson;
   font-weight: 600;
-  border-bottom: 2px solid crimson;
 }
 
-/* Optional glow effect on active */
 .navLinks li a.active::after {
   content: '';
   position: absolute;
@@ -87,6 +82,7 @@
     right: 20px;
     padding: 1rem;
     border-radius: 8px;
+    gap: 1rem;
   }
 
   .showMenu {
@@ -99,6 +95,6 @@
 
   .navLinks li a {
     font-size: 0.95rem;
-    padding: 8px 12px;
   }
 }
+
