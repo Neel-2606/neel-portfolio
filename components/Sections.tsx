@@ -29,26 +29,12 @@ export default function Sections() {
         multiple AI + dev tools into a single universal platform.
       </p>
       <div className={styles.cardButtons}>
-        <a
-          href="https://mind-forge-five.vercel.app/"
-          className={styles.btn}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          🔗 Demo
-        </a>
-        <a
-          href="https://github.com/Neel-2606/MindForge"
-          className={styles.btn}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          💻 GitHub
-        </a>
+        <a href="https://mind-forge-five.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.btn}>🔗 Demo</a>
       </div>
     </div>
   </div>
 </section>
+
 
 
 {/* ACHIEVEMENTS */}
