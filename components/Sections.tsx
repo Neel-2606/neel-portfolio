@@ -73,15 +73,15 @@ export default function Sections() {
   <div className={styles.skillsGrid}>
     <div className={styles.skillCard}>
       <h3>C</h3>
-      <p className={styles.level}>Advanced</p>
+      <p className={styles.level}>Problem Solving</p>
     </div>
     <div className={styles.skillCard}>
       <h3>C++</h3>
-      <p className={styles.level}>Advanced</p>
+      <p className={styles.level}>Intermediate</p>
     </div>
     <div className={styles.skillCard}>
       <h3>Java</h3>
-      <p className={styles.level}>Intermediate</p>
+      <p className={styles.level}>Beginer</p>
     </div>
     <div className={styles.skillCard}>
       <h3>AI Tools</h3>
@@ -89,11 +89,11 @@ export default function Sections() {
     </div>
     <div className={styles.skillCard}>
       <h3>HTML, CSS, JS</h3>
-      <p className={styles.level}>Intermediate</p>
+      <p className={styles.level}>Beginer</p>
     </div>
     <div className={styles.skillCard}>
       <h3>React / Next.js</h3>
-      <p className={styles.level}>Intermediate</p>
+      <p className={styles.level}>Learner</p>
     </div>
   </div>
 </section>
