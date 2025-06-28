@@ -93,25 +93,36 @@ export default function Sections() {
     </div>
     <div className={styles.skillCard}>
       <h3>React / Next.js</h3>
-      <p className={styles.level}>Learner</p>
+      <p className={styles.level}>Learning</p>
     </div>
   </div>
 </section>
 
-      {/* CONTACT */}
-      <section className={`${styles.section} ${styles.dark}`} id="contact" data-aos="fade-up">
-        <h2 className={styles.title}>Get In Touch</h2>
-        <form className={styles.contactForm}>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" rows={5} required />
-          <button type="submit" className={styles.btn}>Send Message</button>
-        </form>
-        <div className={styles.socialIcons}>
-          <GithubIcon className={styles.icon} />
-          <LinkedInIcon className={styles.icon} />
-        </div>
-      </section>
+     {/* CONTACT */}
+<section className={`${styles.section} ${styles.dark}`} id="contact" data-aos="fade-up">
+  <h2 className={styles.title}>Contact Me</h2>
+  <div className={styles.contactCard}>
+    <form className={styles.contactForm}>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows={5} required />
+      <button type="submit" className={styles.btn}>📩 Send Message</button>
+    </form>
+
+    <div className={styles.socialConnect}>
+      <p className={styles.connectText}>Or connect with me here:</p>
+      <div className={styles.socialIcons}>
+        <a href="https://github.com/Neel-2606" target="_blank" rel="noopener noreferrer">
+          <GithubIcon className={styles.icon} title="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/neel-prajapati-447531330" target="_blank" rel="noopener noreferrer">
+          <LinkedInIcon className={styles.icon} title="LinkedIn" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* FOOTER */}
       <footer className={styles.footer}>
