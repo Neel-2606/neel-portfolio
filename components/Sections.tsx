@@ -37,29 +37,37 @@ export default function Sections() {
   </div>
 </section>
 
+{/* ACHIEVEMENTS */}
+<section className={styles.section} id="achievements" data-aos="fade-up">
+  <h2 className={styles.title}>Achievements & Hackathons</h2>
+  <div className={styles.cards}>
+    <div className={styles.card}>
+      <h3>🏆 Google Cloud & Diamond League</h3>
+      <p>
+        Completed Generative AI Track under Google Cloud Career Launchpad Program.
+        Also an active participant and Diamond League contestant in that.
+      </p>
+    </div>
 
-      {/* ACHIEVEMENTS */}
-      <section className={styles.section} id="achievements" data-aos="fade-right">
-        <h2 className={styles.title}>Achievements & Hackathons</h2>
-        <div className={styles.cards}>
-          <div className={styles.card}>
-            <h3>Google Cloud Career Launchpad</h3>
-            <p>Completed Generative AI Track under the Cloud Career Launchpad Program.</p>
-          </div>
-          <div className={styles.card}>
-            <h3>Diamond League Participant</h3>
-            <p>Active participant in elite tech challenges and hackathons.</p>
-          </div>
-          <div className={styles.card}>
-            <h3>Hack2Skill Hackathon</h3>
-            <p>Developed AI-based solutions during a 48-hour hackathon event.</p>
-          </div>
-          <div className={styles.card}>
-            <h3>AI for Impact Hackathon</h3>
-            <p>Participated in Google Cloud AI for Impact to solve real-world problems using AI.</p>
-          </div>
-        </div>
-      </section>
+    <div className={styles.card}>
+      <h3>🤖 Hack2Skill + AI for Impact</h3>
+      <p>
+        Built AI-based solutions in the Hack2Skill hackathon organized by
+        Google Cloud to tackle real-world problems using AI.
+      </p>
+    </div>
+
+    <div className={styles.card}>
+      <h3>🚀 ISRO SpaceTech Innovation Hackathon</h3>
+      <p>
+        Developing geospatial and satellite-based solutions in India's ISRO-led
+        national SpaceTech hackathon. participating among top tech talent across the country.
+      </p>
+    </div>
+  </div>
+</section>
+
+      
 
       {/* SKILLS */}
       <section className={styles.section} id="skills" data-aos="fade-up">
