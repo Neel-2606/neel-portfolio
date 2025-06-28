@@ -98,12 +98,20 @@ export default function Sections() {
 <section className={`${styles.section} ${styles.dark}`} id="contact" data-aos="fade-up">
   <h2 className={styles.title}>Contact Me</h2>
   <div className={styles.contactCard}>
-    <form className={styles.contactForm}>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows={5} required />
-      <button type="submit" className={styles.btn}>📩 Send Message</button>
-    </form>
+    <form
+  action="https://formsubmit.co/YOUR_EMAIL@gmail.com"
+  method="POST"
+  className={styles.contactForm}
+>
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" rows={5} required />
+  
+  {/* Optional spam protection */}
+  <input type="hidden" name="_captcha" value="false" />
+
+  <button type="submit" className={styles.btn}>Send Message</button>
+</form>
 
     <div className={styles.socialConnect}>
       <p className={styles.connectText}>Or connect with me here:</p>
