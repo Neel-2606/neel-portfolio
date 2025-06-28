@@ -19,16 +19,15 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} data-aos="fade-up">
       <div className={styles.content}>
         <h1>Hello, I&apos;m <span className={styles.name}>Neel</span></h1>
         <h2 className={styles.typing}><span ref={typedRef}></span></h2>
         <p>Building my skills and creating cool things along the way 🚀</p>
-       <a href="#contact" className={styles.button}> Lets Connect 🤝</a>
-
-
+        <a href="#contact" className={styles.button}> Lets Connect 🤝</a>
       </div>
     </section>
   );
 }
+
 

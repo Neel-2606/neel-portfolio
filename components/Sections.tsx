@@ -1,11 +1,11 @@
 import styles from "@/styles/Sections.module.css";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub as GithubIcon, FaLinkedin as LinkedInIcon } from "react-icons/fa";
 
 export default function Sections() {
   return (
     <>
       {/* ABOUT */}
-      <section className={styles.section} id="about">
+      <section className={styles.section} id="about" data-aos="fade-up">
         <h2 className={styles.title}>About Me</h2>
         <div className={styles.aboutContent}>
           <p>
@@ -19,7 +19,7 @@ export default function Sections() {
       </section>
 
       {/* PROJECTS */}
-      <section className={`${styles.section} ${styles.dark}`} id="projects">
+      <section className={`${styles.section} ${styles.dark}`} id="projects" data-aos="zoom-in-up">
         <h2 className={styles.title}>Projects</h2>
         <div className={styles.cards}>
           <div className={styles.card}>
@@ -38,7 +38,7 @@ export default function Sections() {
       </section>
 
       {/* ACHIEVEMENTS */}
-      <section className={styles.section} id="achievements">
+      <section className={styles.section} id="achievements" data-aos="fade-right">
         <h2 className={styles.title}>Achievements & Hackathons</h2>
         <div className={styles.cards}>
           <div className={styles.card}>
@@ -61,7 +61,7 @@ export default function Sections() {
       </section>
 
       {/* SKILLS */}
-      <section className={styles.section} id="skills">
+      <section className={styles.section} id="skills" data-aos="fade-up">
         <h2 className={styles.title}>My Skills</h2>
         <div className={styles.skills}>
           <div className={styles.skillBar}><span>C</span><div><div className={styles.bar} style={{ width: "85%" }} /></div></div>
@@ -73,7 +73,7 @@ export default function Sections() {
       </section>
 
       {/* CONTACT */}
-      <section className={`${styles.section} ${styles.dark}`} id="contact">
+      <section className={`${styles.section} ${styles.dark}`} id="contact" data-aos="fade-up">
         <h2 className={styles.title}>Get In Touch</h2>
         <form className={styles.contactForm}>
           <input type="text" placeholder="Your Name" required />
@@ -82,8 +82,8 @@ export default function Sections() {
           <button type="submit" className={styles.btn}>Send Message</button>
         </form>
         <div className={styles.socialIcons}>
-          <FaGithub className={styles.icon} />
-          <FaLinkedin className={styles.icon} />
+          <GithubIcon className={styles.icon} />
+          <LinkedInIcon className={styles.icon} />
         </div>
       </section>
 
