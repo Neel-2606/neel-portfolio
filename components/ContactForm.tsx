@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, ChangeEvent, FormEvent } from 'react';
-import styles from './YourStyles.module.css'; // Replace with your actual style file
+import styles from '@/styles/Sections.module.css';
+ // Replace with your actual style file
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
