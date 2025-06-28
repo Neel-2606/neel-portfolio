@@ -67,19 +67,36 @@ export default function Sections() {
   </div>
 </section>
 
-      
-
-      {/* SKILLS */}
-      <section className={styles.section} id="skills" data-aos="fade-up">
-        <h2 className={styles.title}>My Skills</h2>
-        <div className={styles.skills}>
-          <div className={styles.skillBar}><span>C</span><div><div className={styles.bar} style={{ width: "85%" }} /></div></div>
-          <div className={styles.skillBar}><span>C++</span><div><div className={styles.bar} style={{ width: "80%" }} /></div></div>
-          <div className={styles.skillBar}><span>Java</span><div><div className={styles.bar} style={{ width: "75%" }} /></div></div>
-          <div className={styles.skillBar}><span>AI Tools</span><div><div className={styles.bar} style={{ width: "70%" }} /></div></div>
-          <div className={styles.skillBar}><span>Web Development (HTML, CSS, JS)</span><div><div className={styles.bar} style={{ width: "78%" }} /></div></div>
-        </div>
-      </section>
+  {/* SKILLS */}
+<section className={styles.section} id="skills" data-aos="fade-up">
+  <h2 className={styles.title}>My Skills</h2>
+  <div className={styles.skillsGrid}>
+    <div className={styles.skillCard}>
+      <h3>C</h3>
+      <p className={styles.level}>Advanced</p>
+    </div>
+    <div className={styles.skillCard}>
+      <h3>C++</h3>
+      <p className={styles.level}>Advanced</p>
+    </div>
+    <div className={styles.skillCard}>
+      <h3>Java</h3>
+      <p className={styles.level}>Intermediate</p>
+    </div>
+    <div className={styles.skillCard}>
+      <h3>AI Tools</h3>
+      <p className={styles.level}>Good Experience</p>
+    </div>
+    <div className={styles.skillCard}>
+      <h3>HTML, CSS, JS</h3>
+      <p className={styles.level}>Intermediate</p>
+    </div>
+    <div className={styles.skillCard}>
+      <h3>React / Next.js</h3>
+      <p className={styles.level}>Intermediate</p>
+    </div>
+  </div>
+</section>
 
       {/* CONTACT */}
       <section className={`${styles.section} ${styles.dark}`} id="contact" data-aos="fade-up">

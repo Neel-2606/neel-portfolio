@@ -69,29 +69,36 @@
   margin-top: 15px;
 }
 
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+}
 
-.skills {
-  max-width: 700px;
-  margin: auto;
+.skillCard {
+  background: #1a1a1a;
+  padding: 25px 20px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
-.skillBar {
-  margin: 15px 0;
-  text-align: left;
+.skillCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.25);
 }
-.skillBar span {
-  display: block;
-  font-weight: 500;
-  margin-bottom: 5px;
+
+.skillCard h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
 }
-.skillBar div {
-  height: 8px;
-  background: #555;
-  border-radius: 4px;
-}
-.bar {
-  height: 100%;
-  background: crimson;
-  border-radius: 4px;
+.level {
+  font-size: 14px;
+  color: #aaa;
 }
 
 .contactForm {
@@ -141,4 +148,3 @@
   font-size: 14px;
   color: #aaa;
 }
-
