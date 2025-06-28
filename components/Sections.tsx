@@ -50,7 +50,7 @@ export default function Sections() {
     </div>
 
     <div className={styles.card}>
-      <h3>🤖 Hack2Skill + AI for Impact</h3>
+      <h3>🤖 Hack2Skill AI for Impact</h3>
       <p>
         Built AI-based solutions in the Hack2Skill hackathon organized by
         Google Cloud to tackle real-world problems using AI.
