@@ -22,7 +22,10 @@
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   margin-top: 20px;
   padding: 12px 30px;
   background: crimson;
@@ -31,11 +34,15 @@
   border-radius: 6px;
   transition: 0.3s;
   text-decoration: none;
+  font-weight: 500;
 }
+
 .btn:hover {
   background: transparent;
-  color: crimson;
+  color: white; /* <-- FIXED: Prevents disappearing text */
+  border-color: white;
 }
+
 
 .cards {
   display: flex;

@@ -17,8 +17,7 @@ export default function Sections() {
           <a href="#" className={styles.btn}>📄 Download Resume</a>
         </div>
       </section>
-
-      {/* PROJECTS */}
+{/* PROJECTS */}
 <section className={`${styles.section} ${styles.dark}`} id="projects" data-aos="zoom-in-up">
   <h2 className={styles.title}>Projects</h2>
   <div className={styles.cards}>
@@ -30,12 +29,27 @@ export default function Sections() {
         multiple AI + dev tools into a single universal platform.
       </p>
       <div className={styles.cardButtons}>
-        <a href="#" className={styles.btn}>🔗 Demo</a>
-        <a href="#" className={styles.btn}>💻 GitHub</a>
+        <a
+          href="https://mind-forge-five.vercel.app/"
+          className={styles.btn}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🔗 Demo
+        </a>
+        <a
+          href="https://github.com/Neel-2606/MindForge"
+          className={styles.btn}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          💻 GitHub
+        </a>
       </div>
     </div>
   </div>
 </section>
+
 
 {/* ACHIEVEMENTS */}
 <section className={styles.section} id="achievements" data-aos="fade-up">
