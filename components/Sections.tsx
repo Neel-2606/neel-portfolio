@@ -60,7 +60,7 @@ export default function Sections() {
     <div className={styles.card}>
       <h3>🚀 ISRO SpaceTech Innovation Hackathon</h3>
       <p>
-        Developing geospatial and satellite-based solutions in India&apos;s ISRO-led national 
+        Developing geospatial and satellite-based solutions in India ISRO-led national 
         SpaceTech hackathon.participating among top tech talent across the country.
       </p>
     </div>
