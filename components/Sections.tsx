@@ -5,18 +5,14 @@ export default function Sections() {
   return (
     <>
       {/* ABOUT */}
-      <section className={styles.section} id="about" data-aos="fade-up">
-        <h2 className={styles.title}>About Me</h2>
-        <div className={styles.aboutContent}>
-          <p>
-            I am a Computer Science student with a passion for building things
-            that matter. I enjoy learning new technologies, working on creative
-            projects, and growing my skills every day. My current focus is on
-            full-stack web development, AI tools, and impactful innovation.
-          </p>
-          <a href="#" className={styles.btn}>📄 Download Resume</a>
-        </div>
-      </section>
+    <section className={styles.section} id="about" data-aos="fade-up">
+  <h2 className={styles.title}>About Me</h2>
+  <p className={styles.aboutContent}>
+    I am a Computer Science student with a passion for building things that matter. I enjoy learning new technologies, working on creative projects, and growing my skills every day. My current focus is on full-stack web development, AI tools, and impactful innovation.
+  </p>
+  <a href="/My%20Resume.pdf" className={styles.btn} target="_blank" rel="noopener noreferrer">📄 See Resume</a>
+</section>
+
 {/* PROJECTS */}
 <section className={`${styles.section} ${styles.dark}`} id="projects" data-aos="zoom-in-up">
   <h2 className={styles.title}>Projects</h2>
