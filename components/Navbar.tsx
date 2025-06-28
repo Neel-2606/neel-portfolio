@@ -9,7 +9,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['#home', '#about', '#projects', '#achievements', '#skills', '#contact'];
+      const sections = ['#about', '#projects', '#achievements', '#skills', '#contact'];
+      let found = false;
 
       for (const id of sections) {
         const el = document.querySelector(id);
@@ -17,16 +18,29 @@ const Navbar = () => {
           const top = el.getBoundingClientRect().top;
           if (top <= 100 && top >= -300) {
             setActiveLink(id);
+            found = true;
             break;
           }
         }
       }
+
+      // If no section is in view, assume at top → set to #home
+      if (!found && window.scrollY < 200) {
+        setActiveLink('#home');
+      }
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const scrollToTop = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setActiveLink('#home');
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -40,7 +54,15 @@ const Navbar = () => {
         </div>
 
         <ul className={`${styles.navLinks} ${isMenuOpen ? styles.showMenu : ''}`}>
-          <li><a href="#home" className={activeLink === '#home' ? styles.active : ''}>Home</a></li>
+          <li>
+            <a
+              href="#"
+              onClick={scrollToTop}
+              className={activeLink === '#home' ? styles.active : ''}
+            >
+              Home
+            </a>
+          </li>
           <li><a href="#about" className={activeLink === '#about' ? styles.active : ''}>About</a></li>
           <li><a href="#projects" className={activeLink === '#projects' ? styles.active : ''}>Projects</a></li>
           <li><a href="#achievements" className={activeLink === '#achievements' ? styles.active : ''}>Achievements</a></li>
