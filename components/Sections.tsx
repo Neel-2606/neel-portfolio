@@ -1,5 +1,6 @@
 import styles from "@/styles/Sections.module.css";
 import { FaGithub as GithubIcon, FaLinkedin as LinkedInIcon } from "react-icons/fa";
+import ContactForm from "./ContactForm";
 
 export default function Sections() {
   return (
@@ -98,19 +99,20 @@ export default function Sections() {
 <section className={`${styles.section} ${styles.dark}`} id="contact" data-aos="fade-up">
   <h2 className={styles.title}>Contact Me</h2>
   <div className={styles.contactCard}>
-    <form
-  action="https://formsubmit.co/ndp260106@gmail.com"method="POST"
-  className={styles.contactForm}
->
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Your Message" rows={5} required />
-  
-  {/* Optional spam protection */}
-  <input type="hidden" name="_captcha" value="false" />
+  import ContactForm from './ContactForm'; // Adjust the path if needed
 
-  <button type="submit" className={styles.btn}>Send Message</button>
-</form>
+...
+
+{/* CONTACT */}
+<section className={`${styles.section} ${styles.dark}`} id="contact" data-aos="fade-up">
+  <h2 className={styles.title}>Get In Touch</h2>
+  <ContactForm/>
+  <div className={styles.socialIcons}>
+    <GithubIcon className={styles.icon} />
+    <LinkedInIcon className={styles.icon} />
+  </div>
+</section>
+
 
     <div className={styles.socialConnect}>
       <p className={styles.connectText}>Or connect with me here:</p>
