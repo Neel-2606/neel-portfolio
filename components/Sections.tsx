@@ -19,23 +19,24 @@ export default function Sections() {
       </section>
 
       {/* PROJECTS */}
-      <section className={`${styles.section} ${styles.dark}`} id="projects" data-aos="zoom-in-up">
-        <h2 className={styles.title}>Projects</h2>
-        <div className={styles.cards}>
-          <div className={styles.card}>
-            <h3>🧠 MindForge</h3>
-            <p>
-              A powerful AI-powered builder that can generate websites, mobile
-              apps, games, tools, and more using natural language. Combines
-              multiple AI + dev tools into a single universal platform.
-            </p>
-            <div className={styles.cardButtons}>
-              <a href="#" className={styles.btn}>🔗 Demo</a>
-              <a href="#" className={styles.btn}>💻 GitHub</a>
-            </div>
-          </div>
-        </div>
-      </section>
+<section className={`${styles.section} ${styles.dark}`} id="projects" data-aos="zoom-in-up">
+  <h2 className={styles.title}>Projects</h2>
+  <div className={styles.cards}>
+    <div className={styles.card}>
+      <h3>🧠 MindForge</h3>
+      <p>
+        A powerful AI-powered builder that can generate websites, mobile
+        apps, games, tools, and more using natural language. Combines
+        multiple AI + dev tools into a single universal platform.
+      </p>
+      <div className={styles.cardButtons}>
+        <a href="#" className={styles.btn}>🔗 Demo</a>
+        <a href="#" className={styles.btn}>💻 GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* ACHIEVEMENTS */}
       <section className={styles.section} id="achievements" data-aos="fade-right">
