@@ -99,7 +99,7 @@ export default function Sections() {
   <h2 className={styles.title}>Contact Me</h2>
   <div className={styles.contactCard}>
     <form
-  action="https://formsubmit.co/YOUR_EMAIL@gmail.com"
+  action="https://formsubmit.co/ndp260106@gmail.com"
   method="POST"
   className={styles.contactForm}
 >
