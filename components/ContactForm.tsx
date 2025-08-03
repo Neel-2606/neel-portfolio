@@ -16,7 +16,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      await fetch('https://formsubmit.co/ndp260106@gmail.com', {method: 'POST',
+      await fetch('https://formsubmit.co/factandfearshow@gmail.com', {method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json',
