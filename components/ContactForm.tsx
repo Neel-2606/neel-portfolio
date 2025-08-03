@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, ChangeEvent, FormEvent } from 'react';
-import styles from '@/styles/Sections.module.css';
- // Replace with your actual style file
+import styles from '@/styles/Sections.module.css'; // Update the path if needed
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -16,21 +15,25 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      await fetch('https://formsubmit.co/factandfearshow@gmail.com', {method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-          _captcha: false,
-        }),
+      const data = new FormData();
+      data.append('name', formData.name);
+      data.append('email', formData.email);
+      data.append('message', formData.message);
+      data.append('_captcha', 'false');
+      // Optional: redirect after submit
+      // data.append('_next', 'https://yourdomain.com/thank-you');
+
+      const response = await fetch('https://formsubmit.co/factandfearshow@gmail.com', {
+        method: 'POST',
+        body: data,
       });
 
-      setFormData({ name: '', email: '', message: '' });
-      setIsSubmitted(true);
+      if (response.ok) {
+        setFormData({ name: '', email: '', message: '' });
+        setIsSubmitted(true);
+      } else {
+        console.error('Failed to send message');
+      }
     } catch (error) {
       console.error('Error:', error);
     }
@@ -64,7 +67,9 @@ const ContactForm = () => {
       />
       <button type="submit" className={styles.btn}>Send Message</button>
       {isSubmitted && (
-        <p style={{ color: 'lightgreen', marginTop: '10px' }}>✅ Message Sent Successfully!</p>
+        <p style={{ color: 'lightgreen', marginTop: '10px' }}>
+          ✅ Message Sent Successfully!
+        </p>
       )}
     </form>
   );
