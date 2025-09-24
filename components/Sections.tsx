@@ -59,6 +59,26 @@ export default function Sections() {
               SpaceTech hackathon. Participating among top tech talent across the country.
             </p>
           </div>
+          
+
+          <div className={styles.card}>
+  <h3>🏆 Hackovate LJ — Finalist</h3>
+  <p>
+    Finalist at Hackovate LJ (36-hour AI hackathon hosted by LJ University).
+    Built an ML pipeline to predict cattle milk yield and flag health/anomaly risks using sensor & historical data —
+    feature engineering, model training, and a small dashboard for farmer alerts.
+  </p>
+</div>
+
+<div className={styles.card}>
+  <h3>🌊 HackOut (DA-IICT) </h3>
+  <p>
+    At HackOut (DA-IICT). Developed a "Coastal Threat Alert System" — a prototype that fuses coastal sensor data and satellite/sea-state indicators to detect potential hazards
+    (flooding/erosion) and trigger automated alerts for local authorities.
+  </p>
+</div>
+
+
         </div>
       </section>
 
