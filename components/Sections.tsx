@@ -73,7 +73,7 @@ export default function Sections() {
 <div className={styles.card}>
   <h3>🌊 HackOut (DA-IICT) </h3>
   <p>
-    At HackOut (DA-IICT). Developed a "Coastal Threat Alert System" — a prototype that fuses coastal sensor data and satellite/sea-state indicators to detect potential hazards
+    At HackOut (DA-IICT). Developed a Coastal Threat Alert System — a prototype that fuses coastal sensor data and satellite/sea-state indicators to detect potential hazards
     (flooding/erosion) and trigger automated alerts for local authorities.
   </p>
 </div>
