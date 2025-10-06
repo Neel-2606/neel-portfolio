@@ -78,6 +78,14 @@ export default function Sections() {
   </p>
 </div>
 
+<div className={styles.card}>
+  <h3>🌍 NASA Space Apps Challenge 2025</h3>
+  <p>
+  
+  Created Mumbai Pulse — an AI-powered platform using NASA data to monitor air quality, heat, and water for smarter, healthier cities.
+  Empowering citizens and planners with real-time environmental insights and risk alerts. 🌎
+  </p>
+</div>
 
         </div>
       </section>
