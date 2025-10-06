@@ -43,3 +43,20 @@ h1, h2, h3 {
   box-sizing: border-box;
 }
 
+/* Smooth scrolling for in-page anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent sections from being hidden under the sticky navbar */
+section {
+  scroll-margin-top: 80px; /* approx navbar height */
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
