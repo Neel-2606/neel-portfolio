@@ -122,11 +122,19 @@
   color: white;
 }
 
-.cardButtons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 15px;
+/* Make buttons stand out when card is hovered */
+.card:hover .btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: white;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.card:hover .btn:hover {
+  background: white;
+  color: #222;
+  border-color: white;
 }
 
 .skillsGrid {
