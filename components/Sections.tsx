@@ -1,6 +1,7 @@
 import styles from "@/styles/Sections.module.css";
 import { FaGithub as GithubIcon, FaLinkedin as LinkedInIcon } from "react-icons/fa";
 import ContactForm from "./ContactForm";
+import Link from "next/link";
 
 export default function Sections() {
   return (
@@ -42,6 +43,11 @@ export default function Sections() {
               Completed Generative AI Track under Google Cloud Career Launchpad Program.
               Also an active participant and Diamond League contestant in that.
             </p>
+            <div className={styles.cardButtons}>
+              <Link href="/achievements/google-cloud-diamond-league" className={styles.btn}>
+                See More →
+              </Link>
+            </div>
           </div>
 
           <div className={styles.card}>
@@ -50,6 +56,11 @@ export default function Sections() {
               Built AI-based solutions in the Hack2Skill hackathon organized by
               Google Cloud to tackle real-world problems using AI.
             </p>
+            <div className={styles.cardButtons}>
+              <Link href="/achievements/hack2skill" className={styles.btn}>
+                See More →
+              </Link>
+            </div>
           </div>
 
           <div className={styles.card}>
@@ -58,6 +69,11 @@ export default function Sections() {
               Developing geospatial and satellite-based solutions in India ISRO-led national 
               SpaceTech hackathon. Participating among top tech talent across the country.
             </p>
+            <div className={styles.cardButtons}>
+              <Link href="/achievements/isro-spacetech" className={styles.btn}>
+                See More →
+              </Link>
+            </div>
           </div>
           
 
@@ -68,6 +84,11 @@ export default function Sections() {
     Built an ML pipeline to predict cattle milk yield and flag health/anomaly risks using sensor & historical data —
     feature engineering, model training, and a small dashboard for farmer alerts.
   </p>
+  <div className={styles.cardButtons}>
+    <Link href="/achievements/hackovate-lj" className={styles.btn}>
+      See More →
+    </Link>
+  </div>
 </div>
 
 <div className={styles.card}>
@@ -76,6 +97,11 @@ export default function Sections() {
     At HackOut (DA-IICT). Developed a Coastal Threat Alert System — a prototype that fuses coastal sensor data and satellite/sea-state indicators to detect potential hazards
     (flooding/erosion) and trigger automated alerts for local authorities.
   </p>
+  <div className={styles.cardButtons}>
+    <Link href="/achievements/hackout-daiict" className={styles.btn}>
+      See More →
+    </Link>
+  </div>
 </div>
 
 <div className={styles.card}>
@@ -85,6 +111,11 @@ export default function Sections() {
   Created Mumbai Pulse — an AI-powered platform using NASA data to monitor air quality, heat, and water for smarter, healthier cities.
   Empowering citizens and planners with real-time environmental insights and risk alerts. 🌎
   </p>
+  <div className={styles.cardButtons}>
+    <Link href="/achievements/nasa-space-apps" className={styles.btn}>
+      See More →
+    </Link>
+  </div>
 </div>
 
         </div>

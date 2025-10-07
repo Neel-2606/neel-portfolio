@@ -43,6 +43,59 @@
   border-color: white;
 }
 
+.achievementBox {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.achievementTitle {
+  font-size: 24px;
+  color: crimson;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.achievementContent {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.achievementList {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.achievementList li {
+  padding: 8px 0 8px 24px;
+  position: relative;
+}
+
+.achievementList li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: crimson;
+}
+
+.achievementHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.achievementDate {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 20px;
+}
 
 .cards {
   display: flex;
